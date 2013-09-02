@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+        <p class="about">
+            <p>PyLadies Boston is for anyone who identifies as a woman and is a Python programmer or an aspiring Python programmer in the Boston area. Or even if you have no clue what Python is, but you're interested in learning to program. It's a great language to learn if you have no prior programming experience.</p>
+            <p>Our goal is to get a larger number of women coding and involved in the open source community. Developers and aspiring developers only, please. PyLadies Boston is welcoming to and respectful of trans women. We encourage all women to come out to our meetups.</p>
+            <p>From PyLadies.com: We are a group of women developers worldwide who love the Python programming language. We write code by day or night. Some of us hack on Python projects on the side, while others work full-time on Python development. But it doesn't matter. We all just like writing Python code, and that's what brings us together.</p>
+            <p>RSVP for our events on our <a href="http://www.meetup.com/PyLadies-Boston/">Meetup</a> page! You can also follow us on <a href="http://www.twitter.com/PyLadiesBoston">Twitter</a></p>
+        </p>
+        <footer id="footer">
+            <h4>Connect with us!</h4>
+            <a href="mailto:boston[at]pyladies[dot]com"><img class="icon" src="{{ url_for('static', filename='email.png') }}" width="65" height="65" alt="email"></a>
+            <a href="http://meetup.com/PyLadies-Boston"><img class="icon" src="{{ url_for('static', filename='meetup.gif') }}" width="65" height="45" alt="meetup"></a>
+            <a href="https://github.com/PyLadies-Boston">
+                <img class="icon" src="{{ url_for('static', filename='github.png') }}" width="65" height="65" alt="github"></a>
+            <a href="http://www.twitter.com/pyladiesboston">
+                <img class="icon" src="{{ url_for('static', filename='twitter.png') }}" width="65" height="65" alt="twitter"></a>
+            <h3>Organizers</h3>
+            <a href="http://twitter.com/oboesqueaks">
+                <img src="{{ url_for('static', filename='jennifer.jpeg') }}" width="100" alt="@oboesqueaks"></a>
+            <h3>Jennifer Morton</h3>
+            <p>Founder/Organizer</p>
+
+            <a href="http://twitter.com/eudaimonious">
+                <img src="{{ url_for('static', filename='margaret.jpeg') }}" width="100" alt="@eudaimonious"></a>
+            <h3>Margaret Scott</h3>
+            <p>Organizer</p>
+        </footer>
+{% endblock %}
